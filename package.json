@@ -3,9 +3,9 @@
     "version": "0.1.0",
     "description": "Code Quality Guidelines | Omnigon",
     "dependencies": {
-        "gulp": "^3.9.0",
-        "gulp-connect": "^2.2.0",
-        "gulp-less": "^3.0.3",
+        "gulp": "^4.0.0",
+        "gulp-connect": "^5.7.0",
+        "gulp-less": "^4.0.1",
         "stylelint": "^9.8.0"
     },
     "main": "gulpfile.js",
@@ -13,7 +13,7 @@
         "gulp-markdown": "^3.0.0",
         "handlebars": "^4.0.12",
         "lodash": "^4.17.11",
-        "marked": "^0.5.2"
+        "marked": "^0.6.1"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
