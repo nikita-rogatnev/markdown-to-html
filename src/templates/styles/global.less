@@ -1,0 +1,140 @@
+/* ------------------------------------------ */
+/* GLOBAL
+/* ------------------------------------------ */
+@html-font-size: 62.5%; // 1rem = 10px
+
+@base-font-size: 1.4rem;
+
+//- Breakpoints
+@screen-s-min: 320px;
+@screen-m-min: 768px;
+@screen-l-min: 1170px;
+@screen-xl-min: 1550px;
+@screen-max: 3840px;
+
+@small: @small-down;
+@small-down: ~"(max-width:" (@screen-m-min - 1px) ~")";
+
+@medium: @medium-up and @medium-down;
+@medium-down: ~"(max-width:" (@screen-l-min - 1px) ~")";
+@medium-up: ~"(min-width:" @screen-m-min ~")";
+
+@large: @large-up and @large-down;
+@large-down: ~"(max-width:" (@screen-xl-min - 1px) ~")";
+@large-up: ~"(min-width:" @screen-l-min ~")";
+
+@extra-large: @extra-large-up;
+@extra-large-up: ~"(min-width:" @screen-xl-min ~")";
+
+@base-font-family: "Helvetica", "Arial", sans-serif;
+
+@border: 0.1rem solid rgba(0, 0, 0, 0.1);
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    font-size: @html-font-size;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    min-width: @screen-s-min;
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    font: @base-font-size ~'/' 1.667 @base-font-family;
+
+    -webkit-font-smoothing: antialiased;
+    font-variant-numeric: proportional-nums;
+    font-feature-settings: "pnum";
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+a,
+a:visited {
+    color: #5a5a5a;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    display: block;
+    margin: 0;
+    padding: 1.5rem 0;
+    width: 100%;
+    line-height: 1;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+ul,
+ol {
+    padding: 0 0 0 2rem;
+}
+
+p {
+    margin: 0 0 1rem;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
+    padding: 0;
+    border: 0;
+    clip-path: inset(100%);
+}
+
+@media @medium-up {
+    body {
+        flex-direction: row;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        padding: 3rem 0;
+    }
+}

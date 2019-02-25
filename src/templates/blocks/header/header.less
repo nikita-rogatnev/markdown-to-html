@@ -1,0 +1,44 @@
+.header {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    background-color: #000000;
+}
+
+.header__logo {
+    margin: 0 1.5rem 0 0;
+    font-size: 0;
+    line-height: 0;
+    fill: #ffffff;
+
+    &:hover {
+        fill: #ed1c24;
+    }
+}
+
+.header__title {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+@media @medium-up {
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 35vw;
+        padding: 1rem 3rem;
+    }
+}
+
+@media @large-up {
+    .header {
+        width: 20vw;
+    }
+}

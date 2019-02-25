@@ -1,0 +1,41 @@
+.group__title {
+    padding: 1.5rem;
+    border-top: @border;
+    border-bottom: @border;
+}
+
+@media @medium-up {
+    .group {
+        &:first-child {
+            position: relative;
+            padding: 5rem 0 3rem;
+            border-top: 0;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 5rem;
+                margin: 0;
+                padding: 1rem 3rem;
+                content: 'Standards for developing flexible, durable, and sustainable product';
+                color: #ffffff;
+                background: #000000;
+                font-size: 1.4rem;
+                font-weight: 700;
+                line-height: 1;
+            }
+
+            .group__title {
+                border-top: 0;
+            }
+        }
+    }
+
+    .group__title {
+        padding: 3rem;
+    }
+}

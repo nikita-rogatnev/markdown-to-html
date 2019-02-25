@@ -1,0 +1,1 @@
+- To install it, just install

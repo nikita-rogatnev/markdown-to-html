@@ -1,0 +1,32 @@
+pre {
+    width: 100%;
+    background: #222222;
+
+    code.hljs {
+        font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    }
+
+    code.hljs-name {
+        font-weight: 400;
+    }
+
+    .hljs-ln {
+        .hljs-ln-numbers {
+            padding: 0 1rem 0 0;
+        }
+    }
+}
+
+@media @medium-up {
+    pre {
+        code.hljs {
+            padding: 3rem;
+        }
+    }
+}
+
+@media @large-up {
+    pre {
+        width: 50%;
+    }
+}
