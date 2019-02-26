@@ -42,7 +42,7 @@ gulp.task('start', function () {
     let watchMarkdown = gulp.watch('src/markdown/**/*.md', ['html']);
 });
 
-gulp.task('build', function () {
+gulp.task('default', function () {
     gulp.run('html');
     gulp.run('less');
     gulp.run('js');
