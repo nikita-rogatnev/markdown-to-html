@@ -2,14 +2,12 @@
     "name": "markdown-to-html",
     "version": "0.1.0",
     "description": "Code Quality Guidelines",
-    "dependencies": {
+    "main": "gulpfile.js",
+    "devDependencies": {
         "gulp": "^3.9.0",
         "gulp-connect": "^2.2.0",
         "gulp-less": "^3.0.3",
-        "stylelint": "^9.8.0"
-    },
-    "main": "gulpfile.js",
-    "devDependencies": {
+        "stylelint": "^9.8.0",
         "gulp-markdown": "^3.0.0",
         "handlebars": "^4.0.12",
         "lodash": "^4.17.11",
