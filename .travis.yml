@@ -1,10 +1,12 @@
 language: node_js
 
 node_js:
-  - "11.10"
+  - "10"
 
 notifications:
   email: false
 
-before_script:
-  - gulp default
+  before_script:
+    - npm install -g gulp-cli
+
+  script: gulp

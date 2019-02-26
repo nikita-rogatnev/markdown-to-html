@@ -14,11 +14,11 @@
         "marked": "^0.5.2"
     },
     "scripts": {
-        "start": "start",
-        "default": "default",
-        "test": "echo \"Error: no test specified\""
+        "build": "gulp default",
+        "test": "npm run eslint"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+    "license": "ISC",
+    "engines": {
+        "node": "10"
+    }
 }
