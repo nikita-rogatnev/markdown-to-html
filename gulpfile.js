@@ -33,7 +33,7 @@ gulp.task('js', function () {
         .pipe(gulp.dest('build/js'))
 });
 
-gulp.task('dev', function () {
+gulp.task('start', function () {
     gulp.run('html');
     gulp.run('less');
     gulp.run('js');
@@ -42,7 +42,7 @@ gulp.task('dev', function () {
     let watchMarkdown = gulp.watch('src/markdown/**/*.md', ['html']);
 });
 
-gulp.task('default', function () {
+gulp.task('build', function () {
     gulp.run('html');
     gulp.run('less');
     gulp.run('js');

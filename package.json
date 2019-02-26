@@ -1,5 +1,5 @@
 {
-    "name": "style-guide",
+    "name": "markdown-to-html",
     "version": "0.1.0",
     "description": "Code Quality Guidelines",
     "dependencies": {
@@ -16,6 +16,8 @@
         "marked": "^0.5.2"
     },
     "scripts": {
+        "start": "start",
+        "build": "default",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],

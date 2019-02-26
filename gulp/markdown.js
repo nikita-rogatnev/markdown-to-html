@@ -22,9 +22,9 @@ const handlebars = require('handlebars');
 
 const config = require('../config');
 
-const TEMPLATE_PATH = './src/blocks';
+const TEMPLATE_PATH = './src/templates/blocks';
 
-handlebars.registerHelper('kebab', function(str) {
+handlebars.registerHelper('kebab', function (str) {
     if (!str || !_.isString(str)) {
         return '';
     }
@@ -33,10 +33,10 @@ handlebars.registerHelper('kebab', function(str) {
 
 module.exports.processMarkdown = async function processMarkdown(pathToFolder, title, level) {
     const items = await readdir(pathToFolder);
-    const filesContent = await Promise.all(items.map(async function(item) {
+    const filesContent = await Promise.all(items.map(async function (item) {
         const itemPath = path.join(pathToFolder, item);
         const itemStat = await stat(itemPath);
-        if(itemStat.isFile()) {
+        if (itemStat.isFile()) {
             const fileContent = await readFile(itemPath, 'utf-8');
             return marked(fileContent);
         }

@@ -10,5 +10,5 @@
  */
 
 module.exports = {
-    levels: ['basic', 'group', 'chapter', 'article']
+    levels: ['main', 'group', 'chapter', 'article']
 }
