@@ -7,4 +7,4 @@ notifications:
   email: false
 
 before_script:
-  - gulp build
+  - gulp default
