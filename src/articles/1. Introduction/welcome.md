@@ -6,5 +6,3 @@ The point of having style guidelines is to have a common vocabulary of coding so
 what you're saying rather than on how you're saying it. We present global style rules here so people know
 the vocabulary, but local style is also important. If code you add to a file looks drastically different
 from the existing code around it, it throws readers out of their rhythm when they go to read it. Avoid this.
-
-Please [contribute with your language.](https://stash.omnigon.com/projects/OGSKIN/repos/codeguide/)

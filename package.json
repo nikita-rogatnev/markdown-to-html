@@ -1,7 +1,7 @@
 {
     "name": "style-guide",
     "version": "0.1.0",
-    "description": "Code Quality Guidelines | Omnigon",
+    "description": "Code Quality Guidelines",
     "dependencies": {
         "gulp": "^3.9.0",
         "gulp-connect": "^2.2.0",
@@ -17,10 +17,6 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "ssh://git@stash.omnigon.com:7999/ogskin/codeguide.git"
     },
     "keywords": [],
     "author": "",
